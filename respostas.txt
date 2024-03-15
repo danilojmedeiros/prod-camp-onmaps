@@ -1,7 +1,7 @@
 RESPOSTAS:
 
 A. Parabéns! Sua aplicação está agora em produção, e, assim, você passa a ser responsável por ela! Como você garantirá que ela está respondendo conforme o esperado?
-    Podemos automatizar alguns testes, usando algumas ferramentas como pytest, pylint. Além disso criar e configurar alertas, revisões, testes manuais.
+    Podemos automatizar alguns testes, usando algumas ferramentas como pytest, pylint. Além disso, criar e configurar alertas, revisões, testes manuais.
 
 B. É possível que, com o tempo, este modelo da Campifarma diminua a sua performance de predição? Em caso positivo, porque isso ocorre e como você solucionaria esse problema?
     Sim, pois pode haver mudanças na concorrência, no coportamento do consumidor, na economia. Assim, como também dos dados vão se desgastando a medida que o tempo passe. E dependendo do conjuntos de dados,

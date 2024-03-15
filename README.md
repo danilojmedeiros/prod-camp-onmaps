@@ -51,7 +51,7 @@ A estrutura do projeto segue um padrão organizacional para facilitar a manuten�
     - service/controller/start_controller: /.
     - service/controller/main_controller: /main.
 
-3. Tratamento de Requisições:
+3. Processamento de Requisições:
 
 - Ao receber uma requisição em /main:
     - O arquivo service/controller/main_controller.py carrega o endpoint e realiza testes de conformidade.

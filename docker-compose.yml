@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  api-onmaps:
+    container_name: api-onmaps
+    image: api-onmaps
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./service:/code/service
+    networks:
+      - backend
+    ports:
+      - 5000:5000
+
+networks:
+  backend:
+    driver: bridge

@@ -1,0 +1,17 @@
+RESPOSTAS:
+
+A. Parabéns! Sua aplicação está agora em produção, e, assim, você passa a ser responsável por ela! Como você garantirá que ela está respondendo conforme o esperado?
+    Podemos automatizar alguns testes, usando algumas ferramentas como pytest, pylint. Além disso criar e configurar alertas, revisões, testes manuais.
+
+B. É possível que, com o tempo, este modelo da Campifarma diminua a sua performance de predição? Em caso positivo, porque isso ocorre e como você solucionaria esse problema?
+    Sim, pois pode haver mudanças na concorrência, no coportamento do consumidor, na economia. Assim, como também dos dados vão se desgastando a medida que o tempo passe. E dependendo do conjuntos de dados,
+pode ainda haver overfitting.
+    Com monitoramento contínuo para avaliar a performance, além de atualização de acordo com as mudanças regionais e técnicas de modelagem que permitem melhorar e evitar overfitting.
+
+C. Na sua visão, qual é a diferença de responsabilidades e de entregas de um Engenheiro de Machine Learning e de um Cientista de Dados?
+    Os cientistas se concentram mais na análise exploratória, modelagem estatística e comunicação de insights, os engenheiros de machine learning estão mais envolvidos no desenvolvimento, implementação e manutenção de modelos de machine learning em ambientes de produção. 
+    Ambos os papéis são importantes e um complementa o outro. Trabalham juntos para criar ótimas soluções!
+
+D. Campifarma cresceu muito após a utilização do modelo que foi colocado em produção por você. Assim eles desejam expandir para todo o Brasil, e para o seu estudo de expansão desejam prever o faturamento em cada esquina o país, o que compreende por cerca de 10 milhões de pontos. Como você escalaria o seu serviço para responder à estas 10 milhões de requisições? 
+    Algo em uma dimensão tão grande de dados e treinamento tão complexo exige um funcionamento bem estruturado. Primeiro ponto seria otimizar o armazenamento dos dados, para acesso rápido; Implementar uma
+camada de cache para evitar processamento repetido; também um escalonamento automático; arquitetura na AWS distribuída para lidar com o grande volume de dados e requisições. 

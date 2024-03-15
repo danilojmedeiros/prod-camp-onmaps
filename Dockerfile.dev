@@ -1,0 +1,24 @@
+FROM centos/python-38-centos7
+USER root
+
+RUN pip install --no-cache-dir --upgrade pip==20.2.3
+RUN pip install --no-cache-dir --upgrade setuptools==50.3.0
+
+ENV VERSAO=1.0.1 \
+    CMAKE_C_COMPILER=/usr/bin/gcc \
+    CMAKE_CXX_COMPILER=/usr/bin/g++ 
+
+COPY service /code/service
+COPY setup.py /code/
+WORKDIR /code
+
+RUN pip3 install pandas
+RUN pip3 install -e .[dev]
+
+COPY Dockerfile.dev ${BOM_PATH}/
+
+COPY service/config ./config
+
+RUN chmod -R +x /code
+
+CMD ["python3", "-m", "service"]

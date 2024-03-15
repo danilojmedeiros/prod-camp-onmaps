@@ -1,0 +1,44 @@
+swagger: '2.0'
+
+info:
+  version: 0.1.0
+  title: AS Template Flask API
+  description: 'Template flask padrão APIs REST..'
+  contact:
+    email: danilodejesusmedeiros@gmail.com
+
+schemes:
+  - http
+
+tags:
+  - name: AS Template
+    description: 'Welcome to AS Template Flask API.'
+
+paths:
+  /main:
+    post:
+      tags:
+        - AS Template
+      description: 'AS Template Flask API.'
+      parameters:
+        - name: main
+          in: body
+          required: true
+          description: 'teste'
+          schema:
+            $ref: '#/definitions/main'
+      responses:
+        '200':
+          description: 'OK'
+          schema:
+            $ref: '#/definitions/Response200'
+
+definitions:
+  main:
+    type: object
+    properties:
+    example: {
+      "a": 1,
+      "b": 2,
+      "c": 3
+    }
